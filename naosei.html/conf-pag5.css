@@ -1,7 +1,8 @@
 body{
-    background-image: linear-gradient(to top,rgba(210, 105, 30, 0.678),rgba(205, 205, 0, 0.616),rgba(210, 113, 44, 0.957)); 
+    background-image: linear-gradient(to top,rgba(255, 255, 0, 0.623),rgba(227, 102, 12, 0.715),rgba(205, 205, 0, 0.616),rgba(210, 113, 44, 0.957)); 
     background-repeat: no-repeat;
-    height: 100vh;
+    width: 95vw;
+    background-attachment: fixed;
 
 }
 main { 
@@ -10,17 +11,15 @@ main {
 div.principal {
     position: relative;
     margin: auto;
-    border: 1px solid black;
-    width: 400px;
+    width: 350px;
 }
 div.css {
     background-color: chocolate;
     padding: 0px;
     margin-bottom: 0px;
     height: 300px;
-    width: 400px;
+    width: 350px;
     display: block;
-    border: 1px solid black;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -30,7 +29,7 @@ div.css>a {
 }
 div.css>a>img {
     height: 150px;
-    width: 400px;
+    width: 350px;
     display: inline;   
     background-color: whitesmoke;
  
@@ -48,19 +47,32 @@ div.css>a>div {
     top: -10px;
 }   
 a>div>p {
-    border: 1px solid black;
 }
-div.desk-css>a>img {
+div.desk-css {
+    display: none;
 }
 div.js {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.671);
     position: relative;
+    margin-top: 40px;
+    border-radius: 0px 0px 20px 20px;
 }
-div.js>a>div {
+div.js>a>img {
+    width: 350px;
+}
+div.js>a {
+    text-decoration: none;
+}
+div.js>a>p {
+    color: chocolate;
+}
+div.js>a>p {
     display: block;
-    border: 1px solid black;
-    margin: opx;
-    padding: 0px;
+    margin: 10px 20px;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+    padding-top: 10px;
 }
 div.js>a>div>p {
     text-decoration: none;
