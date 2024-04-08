@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina 3</title>
+    <link rel="stylesheet" href="conf-pag3.css" media="screen">
+    <link rel="stylesheet" href="conf-impressora.css" media="print">
+    <link rel="stylesheet" href="conf-todos.css" media="screen">
+    <link rel="stylesheet" href="media-celular.css" media="screen and (max-width: 400px)">
+    <link rel="stylesheet" href="media-desktop.css" media="screen and (min-width: 400px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>CSS 3</h1>
+        
+        <nav>
+            <a id="css1" href="aprendendocss.html">css1
+            </a>
+            <a href="pag2.html">css2</a>
+            <a href="maniulandotexto.html">textos</a>
+            <a href="naose.html">imagens</a>
+        </nav>
+        <menu onclick="clickMenu()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </menu>
+        <li id="lista">
+            <ul><a href="aprendendocss.html">pagina 1</a></ul>
+            <ul>
+                <a href="pag2.html">pagina 2</a>
+
+            </ul>
+            <ul>
+                <a href="pag3.html">pagina 3</a>
+            </ul>
+            <ul>
+                <a href="pag4.html">pagina 4</a>
+            </ul>
+            <ul>
+                <a href="pag5.html">pagina 5</a>
+            </ul>
+        </li>
+    </header>
+    <main>
+        <section>
+            <div class="principal">
+                <h1>
+                    adicionando formularios
+                </h1>
+                <p>
+                    pt2
+                </p>
+            </div>
+            <div class="conteudo">
+               <article>
+                    vamos aprender mais sobre formularios pois ainda tem muitas opções para se usar na tag <strong>input</strong> que podem ser usadas e são muito ulteis então vamos começar ?
+                    <br>
+                    como voce ja deve ter percebido todas tags de formulario é um <strong>input</strong> mas oq diferencia os tipos de input são os <strong>type</strong> veja um exemplo:
+                    <br>
+                    <br>
+                    <strong>
+                        <label for="itexto">&lt;input <mark>type="text"</mark> name="de um nome" id="de um nome"&gt;</label>
+                    </strong><input type="text" name="texto" id="itexto" placeholder="type para textos" size="10">
+                    <br>
+                    <br>
+                    <strong>
+                        <label for="idia">&lt;input <mark>type="date"</mark> name="de um nome" id="de um nome"&gt;</label>
+                    </strong>
+                    <input type="date" name="dia" id="idia">
+                    <br>
+                    <br>
+                    <strong>
+                        <label for="inumeros">&lt;input <mark>type="number"</mark> name="de um nome" id="de um nome"&gt;</label>
+                    </strong>
+                    <input type="number" name="numeros" id="inumeros" placeholder="type para numeros">
+                    <br>
+                    <br>
+                    veja a baixo outro exemplo de formulario e voce vera que em cada tipo de input tera uma caixa os separando e nessa caixa tera um nome anexado e marcado de amarelo, esse nome é o nome usado no <strong>type</strong> do input correspondente...
+
+               </article> 
+            </div>
+            <form action="form.php" class="pag4">
+                <fieldset><legend><mark>radio</mark></legend>
+                    <div class="radio">
+                        <input type="radio" name="sexo" id="feminino"><label for="feminino">radio 1</label>
+                        <input type="radio" name="sexo" id="masculino"><label for="masculino">radio 2</label>
+                        <input type="radio" name="sexo" id="outros"><label for="outros">radio 3</label>
+                    </div>
+                </fieldset>
+                <fieldset><legend> <mark>checkbox</mark></legend>
+                    <div class="check">
+                        <input type="checkbox" name="check1" id="icheck1"> <label for="icheck1">check 1</label>
+                        <br>
+                        <input type="checkbox" name="check2" id="icheck2"> <label for="icheck2">check 2</label>
+                        <br>
+                        <input type="checkbox" name="check3" id="icheck3"> <label for="icheck3">check 3</label>
+                        <br>
+                        <input type="checkbox" name="check4" id="icheck4"> <label for="icheck4">check 4</label>
+                        <br>
+                        <input type="checkbox" name="check5" id="icheck5"> <label for="icheck5">check 5</label>
+                        <br>
+                    </div>
+                </fieldset>
+                <fieldset> <legend><mark>color</mark></legend>
+                    <div class="color">
+                        <input type="color" name="cor" id="icor"><label for="icor">escolha uma cor</label>
+                    </div>
+                </fieldset>
+                <fieldset><legend><mark>range</mark></legend>
+                    <div class="range">
+                        <label for="irange">de uma nota</label>
+                        <input type="range" name="range" id="irange" min="1" max="10">
+                    </div> 
+                </fieldset>
+                <fieldset id="select"><legend><mark style="background-color: chartreuse;">select</mark></legend>
+                    <select name="select" id="iselect">
+                        <option value="ex1">exemplo 1</option>
+                        <option value="ex2">exemplo 2</option>
+                        <option value="ex3">exemplo 3</option>
+                        <option value="ex4">exemplo 4</option>
+                    </select>
+                    <p>
+                        mas esse aqui nao é um <strong>input</strong> e sim somente a tag: 
+                        <br>
+                        <br>
+                        <div id="geral">
+                            <strong>
+                                &lt;select name="" id=""&gt;
+                            </strong>
+                            <div id="section">
+                                <strong>
+                                    &lt;option value="</strong>ex1<strong>"&gt;</strong>exemplo 1<strong>&lt;/option&gt;
+                                        <br>
+                                        &lt;option value="</strong>ex2<strong>"&gt;</strong>exemplo 2<strong>&lt;/option&gt;
+                                        <br>
+                                        &lt;option value="</strong>ex3<strong>"&gt;</strong>exemplo 3<strong>&lt;/option&gt;
+                                        <br>
+                                        &lt;option value="</strong>ex4<strong>"&gt;</strong>exemplo 4<strong>&lt;/option&gt;
+                                </strong>
+                            </div>
+                            <strong>
+                                &lt;/select&gt;
+                            </strong>
+                        </div>
+
+                        <br>
+                        <br>
+                        as tags 
+                        <br>
+                        <strong>&lt;option value="</strong>de um nome<strong>"&gt;</strong>digite o texto da opção<strong>&lt;option&gt;</strong>
+                        <br>
+                        servem para adicionar as opções a serem exibidas podem ter qualquer value e qualquer texto...
+                    </p>
+                </fieldset>
+                <fieldset><legend><mark>text</mark> <mark style="background-color: chartreuse;">datalist</mark></legend>
+                <label for="itextos">isso é muito importante</label>
+                <input type="text" name="texto"  id="itextos" list="lista">
+                <datalist id="lista">
+                    <option>exemplo 1</option>
+                    <option>exemplo 2</option>
+                    <option>exemplo 3</option>
+                    <option>exemplo 4</option>
+                </datalist> <br>
+                <p>
+                    algo muito importante que é uma configuraçao em nosso input use o codigo
+                    <br>
+                    <div id="geral">
+                        <strong>&lt;input type="text" name="de um nome" id="de um nome" list="digite o id de datalist"&gt;
+                        <br>
+                        &lt;datalist id="de um nome"&gt;
+                        <br>
+                        &lt;option&gt;texto da opção&lt;/option&gt;
+                        <br>
+                        &lt;/datalist&gt;
+                        </strong>
+                    </div>
+                </p>
+                </fieldset>
+                <fieldset><legend><mark style="background-color: chartreuse;">textarea</mark></legend>
+                    <textarea name="area" id="iarea" cols="30" rows="10"></textarea>
+                    <br>
+                    esse tambem alem de importante é muito facil veja o codigo a baixo:
+                    <br>
+                    <strong>
+                        &lt;textarea name="de um nome" id="de u nome" cols="largura desejada" rows="tamanho desejado"&gt;
+                    </strong>
+                </fieldset>
+            </form>
+            <div class="pag4">
+                <a href="pag5.html">proxima pagina -&gt;</a>
+
+            </div>
+            <div class="volt">
+                <a href="pag3.html">&lt;-voltar</a>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <strong>acesse meu repositorio do git hub</strong>
+            <br>
+            <a href="https://github.com/tavson1509/html-css3" id="igit">https://github.com/tavson1509/html-css3</a>
+        </p>
+    </footer>
+</body>
+</html>

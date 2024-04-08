@@ -1,0 +1,19 @@
+@charset "utf-8";
+body {
+    background-color: aqua;
+}
+h1 {}
+h1#principal {
+    background-color: rgba(53, 120, 48, 0.849); 
+    color: rgba(255, 247, 0, 0.742); text-align: center;
+}
+h2 {
+    color: rgb(87, 190, 219); background-color: rgb(128, 255, 0);
+}
+p {
+    background-color: aliceblue;
+}
+h3 {
+   background-color: rgba(253, 226, 69, 0.731);
+   color: darkgreen;
+}

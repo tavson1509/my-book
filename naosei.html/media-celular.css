@@ -1,0 +1,9 @@
+header>nav {
+    display: none;
+}
+nav#iframes {
+    display: none;
+}
+textarea {
+    display: none;
+}

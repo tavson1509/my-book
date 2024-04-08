@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+div.css {
+    background-color: chocolate;
+    padding: 0px;
+    margin: 0px;
+    height: 150px;
+    width: 480px;
+}
+
+div.css>a {
+    text-decoration: none;
+}
+div.css>a>img {
+    width: 400px;
+    height: 150px;
+    display: inline;   
+    background-color: whitesmoke; 
+}
+div.css>a>div {
+    display: block;
+    position: relative;
+    top: -323px;
+    color: black;
+    margin-left: 20px;
+    margin: 150px;
+    padding: 0px;
+    left: 148px;
+    font-size: 15px;
+    margin-bottom: -5px;
+    margin-top: px;
+}
+div.css>a>div>p {
+    position: relative;
+    bottom: -20px;
+}
+div.js {
+    background-color: yellow;
+    position: relative;
+    top: -250px;
+}
+div.js>a>div {
+    display: block;
+    border: 1px solid black;
+    margin: 100px;
+    padding: 0px;
+    position: relative;
+    top: -217px;
+    left: 100px;
+}
+div.js>a>div>p {
+    text-decoration: none;
+}
+

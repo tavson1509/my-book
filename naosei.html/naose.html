@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Goodstuff-No-Nonsense-Free-Space-Rick.ico" type="image/x-icon">
+    <title>teste de imagens</title>
+    <link rel="stylesheet" href="coresRAM.css">
+</head>
+<body>
+    <h1 id="principal">
+        testando cargas de imagens e videos
+    </h1>
+    <h2>
+        carregando imagens internas
+    </h2>
+    <p>
+        abaixo voce vai ver a imagem q esta em uma pasta dentro do nosso propio cuputador
+    </p>
+    <p>
+        para adicionar uma imagem adicone a tag (&lt;img src="origem do arquivo" alt="alternativa" ) ou somente digite img e aperte enter e o vs code ira abrir a tag automaticamente. <br>
+        para adicionar a imagem sem precisar especificar seu caminho adicione a imagem junto ao arquivo no vs code, adicione alternativa para que a ferrament de pesquisa saiba do que se trata a imagem (nao obrigatorio) 
+    </p>
+    <img src="exercicio031200.jpg" alt="" >
+
+    <img src="exercicio3400.png" alt="">
+    
+    <h2>
+        carregando imagens externas
+    </h2>
+    <p>
+        tambem podemos carregar imagens de um site ou link <br>
+        para carregar a imagem de um link basta copiar o endereço da imagem e colar sobre a tag (&lt;img src="endereço da imagem" alt="alternativa") exatamente igual para carregr uma imagem interna porem com o endereço (link) desta imagem
+    </p>
+
+    <img src="https://townsquare.media/site/442/files/2015/07/rickd.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89" alt="">
+    <h2>
+        ajustando a imagem conforme o tamanho da janela
+    </h2>
+    <picture>
+        <source media="(max-width:750px)" srcset="Rick-and-Mortytre.png" type="image/png">
+        <source media="(max-width:1200px)" srcset="Rick-and-Mortyst.png" type="image/png">
+        <img src="Rick-and-Mortytreml2.png" alt="">
+    </picture>
+    <p>
+        faça o teste na imagem a cima e vera que podemos fazer com que a imagem se ajuste confore o tamanho que a tela estiver aberta isso facilitara a visualização de sua pagina para usuarios de outros dispositivos como smartfones. <br> <br>
+        <h3>
+            separe a mesma imagem com tamanhos dferentes
+        </h3>
+    </p>
+    <p>
+        voce tera que ter 3 ou mais imagem de tamanhos diferentes recomendado que seja uma de 1200x uma de 700 e outra de 300x
+        lembrando que esses tamanhos não são uma 
+        regra. <br> <br>
+        <h3>faça a troca de imagem</h3>
+    </p>
+    <p>
+        para ajustar sua imagem voce tera que fazer com que o site  troque a imagem atual por uma imagem menor para fazer isso basta usar a tag 
+        <strong>(picture)</strong> dento da tag adicione outra tag 
+        <strong>(source)</strong> na tag source dentro da tag source adicione a função <strong>media=""</strong> dentro das aspas da função voce ira digitar entre parenteses 
+        <strong>
+            (max-width:"o tamanho desejado"px)
+        </strong> 
+        se a tela do usuario estiver menor que o tamanho especificado nesta ultima função o site automaticamente trocara para a imagem menor que vou te ensinar agora como adicionala <br> <br>
+    </p>
+    <p>
+        <h3>
+            adicionando imagem a ser trocada
+        </h3>
+    </p>
+    <p>
+        ainda dentro da nossa tag source depos da funçao media="" adicione a funçao <strong>
+            srcser="o nome da imagem"
+        </strong> 
+        apos isso adicione a funçao 
+        <strong>
+            type="image/"o tipo da imagem""
+        </strong><br>
+        para adionar outra troca de imagem menor basta executar os mesmo codigo a cima desse que acabamos de criar lembrando que sempre sera da menor para a maior e a imagem com tamanho padrao sempre devera ser a maior e sempre sera a ultima abaixo voce vera o codigo da imagem acima com uma imagem padrao e duas trocas para menores... <br><br>
+        <h3>
+            codigo usado na ultima imagem
+        </h3>
+    </p>
+    <p>
+        mas atençao neste codico foi usado tamanho imagens escolhidas e renomeadas por mim quando voce fazer tera q usar sua propias imagens salvas o tamanho pode ser o mesmo que escolhi...
+    </p>
+        <strong>
+            <pre>
+<p style="background-color: rgb(0, 0, 0); color: aliceblue;">
+&lt;picture&gt;<br>
+&lt;source media="(max-width:750px)" srcset="Rick-and-Mortytre.png" type="image/png&gt; <br>
+&lt;source media="(max-width:1200px)" srcset="Rick-and-Mortyst.png" type="image/png"&gt; <br>
+&lt;img src="Rick-and-Mortytreml2.png" alt=""&gt; <br>
+&lt;picture&gt;
+
+</p>
+            </pre>
+        </strong>
+
+    </p>
+
+    <h2>
+        adicionando icone na pagina
+    </h2>
+    <img src="Captura de tela 2024-03-17 035950.png" alt="">
+    <p>
+        para adionar um icone em sua pagina basta voce ter uma imagem em .ico, va ate a parte de "cabeça" do codigo de sua pagina e adicionar o nome da imagem sobre a tag (&lt;link rel="shortcut icon" href="nome da imagem" type="image/x-icon"&gt;) <br>
+        ou somente digite (link) e o vs code ira abrir uma lista com opçoes e confirme a opçao (link:favicon)
+    </p>
+    <h2>adicionando videos</h2>
+    <h3> adionando videos internos</h3>
+    <video src="--(MP4).mp4" width="500" height="500" controls></video>
+    <p>para adicionar videos internos é facil, basta usar a tag <strong>(video)</strong> dentro da tag voce ira colocar o comando <strong>(src="nome do video")</strong> logo em seguida voce colocara o comando <strong>(controls)</strong> e para colocar a o tamanho dentro da tag voce usara o comando <strong>(width="o tamanho desejado")</strong> e para definir o tamanho voce ira usar o comando <strong>(height="a largura desejada")</strong> veja só como ira ficar </p>
+    <p style="background-color: rgb(0, 0, 0); color: aliceblue;">
+        <strong>&lt;video scr="nome do video" controls width="tamanho desejado" height="largura desejada"&gt;</strong>
+    </p>
+    
+    <h1>adicionando audios</h1>
+    <audio preload="metadata" controls>
+        <source src="LELEK DO LEK - VIROU 157 - MC PK (DJ Gui de Novo)(MP3_160K).mp3" type="audio/mpeg" >
+    </audio>
+    <p>
+        podemos tambem adicionar audio ao nosso site e até mesmo fazer com que ele seja executado automaticamente (opção automatica não disponivel para o google). <br>
+        para adionar audio basta usar a tag 
+        <strong>
+            (audio)
+        </strong> 
+        dentro da parte &lt;audio&gt; voce ira digitar <strong>
+            preload="escolha uma opção"
+        </strong>
+        logo após digite <strong>controls</strong> <br>
+        ficando assim 
+        <strong>
+            (&lt;audio preload="escolha uma opção " controls&gt;)
+        </strong>
+        logo apos isso voce ira usar a tag <strong>(source src="o nome do audio" type="audio/tipo do arquivo")</strong>
+        ficando asssim:
+    </p>
+        
+        <strong>
+            <pre>
+        <p style="background-color: rgb(0, 0, 0); color: aliceblue; ">        
+&lt;audio preload="escolha uma opção" controls&gt;
+&lt;source src="nome do audio" type="audio/formato do audio"&gt;
+&lt;/audio&gt;
+        </p>
+            </pre>
+        </strong>
+        
+    acesse nosso site sobre 
+    <a href="maniulandotexto.html" rel="internal">manipulaçao de textos e links
+    </a>
+    
+
+
+    
+</body>
+</html>

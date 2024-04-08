@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formataçoes de textos</title>
+</head>
+<body>
+    <h1>
+        principais formataçoes
+    </h1>
+    <h2>
+        negrito/destaque
+    </h2>
+    <img src="negrito.jpg" alt="">
+    <p>
+        nessa frase temos um <b>termo em negrito usando</b> usando a tag <b>(&lt;b&gt;)</b> sendo <b>(&lt;b&gt;"digite o texto"&lt;/b&gt;)</b> 
+    </p>
+    <p>
+        nessa frase temos um   
+        <strong>
+            termo em destaque
+        </strong> usando a tag 
+        <strong>
+            (&lt;strong&gt;)
+        </strong>
+        sendo 
+        <strong>
+            (&lt;strong&gt;"digite o texto"&lt;/strong&gt;)
+        </strong>
+    </p>
+    <h2>
+        italico/enfase
+    </h2>
+    <img src="italico650.jpg"
+    <p>
+        <br>
+        para escrever em 
+        <b>
+            <i>
+                italico
+            </i>
+        </b>
+        basta adicionar o texto desejado entre a tag 
+        <b>
+            (&lt;i&gt;)</b> sendo <b>(&lt;i&gt;"digite o texto"&lt;/i&gt;)
+
+        </b>
+        ou basta voce selecionar o texto desejado e o 
+        <b>
+            envelopar
+        </b> 
+        apertando as teclas 
+        <b>
+            ctrl + shift + p
+        </b>
+        e digite e selecione a opçao 
+        <b>
+            (emmt: envelope com abreviatura)
+        </b> 
+    </p>
+    <h2>
+        texto marcado
+    </h2>
+     <img src="HTML400.jpg" alt="">
+    <p>
+        podemos criar tambem um texto 
+        <mark>
+            marcado
+        </mark>
+        usando a tag 
+        <b>
+            mark
+        </b>
+        sendo <br>
+        <b>
+            (&lt;mark&gt;"digite seu texto"&lt;/mark&gt;)
+        </b>
+        <br>
+        ou apenas o envelope usando a opcao 
+        <b>
+            mark
+        </b>
+        <br>
+        caso voce queira trocar a 
+        <mark style="background-color: deepskyblue;">cor</mark>
+        da marcaçao voce precisara usar uma tag em 
+        <b>
+            css
+        </b> 
+        que seria 
+        <strong>
+            style="background-color:"a cor desejada;""
+        </strong> 
+        sendo assim <br>
+        <strong>
+            (&lt;mark style="background-color:"a cor desejada;"&gt;"dgite o texto""&lt;/mark&gt;)
+        </strong>
+        <br>
+        caso voce queira que todas as marcaçoes padrao de seu progeto seja da mesma cor voce tera que colocar na parte de 
+        <strong>
+            "cabeça"
+        </strong>
+         do seu projeto a tag <strong>
+             &lt;style&gt; {background-color"escolha a cor";}&lt;/style&gt; 
+            </strong>
+    </p>
+    <h2>
+        texto deletado/texto incluido
+    </h2>
+    <img src="texto-riscado-css-ex2.png" alt="">
+    <p>
+        podemos marcar um texto "
+        <strong>
+            <del>
+                deletado
+            </del>
+        </strong>
+        " que pode ser lido mas nao considerad, basta usar a tag (<strong>del</strong>) e ecrever o texto desejado sobre ela
+    </p>
+    <p>
+        para dar enfase e indicar q um texto foi <ins>
+            incluido
+        </ins>
+        depois basta usar a tag (<strong>ins</strong>) e escrever o texto desejado sobre ela
+    </p>
+    <h1>
+        outras fontes
+    </h1>
+    <h2>
+        fonte mono espaçadas
+    </h2>
+    <p>
+        caso voce deseje adiocionar algo que nao pode ser confundido tipo um email tavison072010@gmail.com e voce quer da espaço para as letras use o a tag (<strong>code</strong>) e adicione o texto desejado sobre ela 
+        <code>
+            tavison072010@gmail.com
+        </code>
+    </p>
+    <h2>
+        identaçao
+    </h2>
+    <img src="slla 400.jpg" alt="">
+    <p>
+        caso voce queira escrever algo identado tipo um codigo de progamaçao voce pode usar a tag (<strong>pre</strong>) exemplo 
+        <br>
+        <br>
+        <code>
+            num = int(input("digite um numero"))
+        if num != 1:
+            print("o numero {}invalido tente novamente".format(num))
+        else:
+            print("ok vamos prosseguir")
+        print("fim do programa") <br>
+        </code>
+        <br>
+        como podemos ver nao tem identaçao assim confindindo quem esta lendo o codigo, usando a tag (<strong>pre</strong>) ficaria <br>
+        <pre>
+        num = int(input("digite um numero"))
+        if num != 1:
+            print("o numero {}invalido tente novamente".format(num))
+        else:
+            print("ok vamos prosseguir")
+        print("fim do programa")
+    </pre>
+    </p>
+    <h1>
+        <mark style="background-color: rgb(115, 238, 170);">
+            adicionando links
+        </mark>
+    </h1>
+    <h2>
+        adicionando links externos
+    </h2>
+    <img src="123076592_XS400.jpg" alt="">
+    <p>
+        para adionar um link exemplo 
+        <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">
+            repositorio do guanabara no git hub
+        </a>
+        <br>
+        basta usar a tag (<strong>a</strong>) sendo assim <br> <strong>
+            (&lt;a href="escreva o link" rel= "external"&gt;"digite o texto que voce deseja por sobre o link"&lt;/a&gt;)
+        </strong>
+        <br>
+        mas atençao dessa forma o o site do link digitado ira abrir por cima do da janela atual para abrir o link em uma nova janela use o comando (<strong>target="_blank"</strong>) depois de ter digitado o link e antes do comando (<strong>rel</strong>) ficando assim: <br>(<strong>&lt;a href="digite o link" target="_blank" rel="external&gt;digite o texto que voce deseja por sobre o link&lt;/a&gt;</strong>)  
+    </p>
+    <h2>
+        adicionando links internos
+    </h2>
+    <p>
+        para adicionar um link interno é a msm regra para adicionar um link externo porem voce tera q ter o arquivo e os dados q contem esse arquivo tipo imagem, videos e etc... na msm pasta  
+    </p>
+    <p>
+        voce esta na pagina de texto do meu site <br> veja tambem a 
+        <a href="naose.html">
+            parte sobre imagem
+        </a> 
+    </p>
+    <p>
+        veja tambem a nossa pagina sobre 
+        <a href="index.html" target="blank" rel="internal">
+            simbolos e emojis
+        </a>
+    </p>
+    <h2>
+        adicionando links de download
+    </h2>
+    <p>
+       <ul>
+          <li>
+            aprete
+            <a href="Rick-and-Mortyst.png" download="exercicio03650.jpg" type="image/jpg">aqui
+            </a> 
+            para fazer o download das fotos de nosso site
+          </li>
+       </ul> 
+    </p>
+
+</body>
+</html>

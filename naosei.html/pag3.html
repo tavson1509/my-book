@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina 3</title>
+    <link rel="stylesheet" href="conf-pag3.css" media="screen">
+    <link rel="stylesheet" href="conf-impressora.css" media="print">
+    <link rel="stylesheet" href="conf-todos.css" media="screen">
+    <link rel="stylesheet" href="media-celular.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="media-desktop.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>CSS 3</h1>
+        
+        <nav>
+            <a id="css1" href="aprendendocss.html">css1
+            </a>
+            <a href="pag2.html">css2</a>
+            <a href="maniulandotexto.html">textos</a>
+            <a href="naose.html">imagens</a>
+        </nav>
+        <menu onclick="clickMenu()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </menu>
+        <li id="lista">
+            <ul><a href="aprendendocss.html">pagina 1</a></ul>
+            <ul>
+                <a href="pag2.html">pagina 2</a>
+
+            </ul>
+            <ul>
+                <a href="pag3.html">pagina 3</a>
+            </ul>
+            <ul>
+                <a href="pag4.html">pagina 4</a>
+            </ul>
+            <ul>
+                <a href="pag5.html">pagina 5</a>
+            </ul>
+        </li>
+    </header>
+        
+        <script>
+            function clickMenu() {
+                if (lista.style.display == 'block') {
+                    lista.style.display = 'none'
+                }
+                else {
+                    lista.style.display = 'block'
+                }
+            }
+        </script>
+    <main>
+        <section>
+            <div class="principal">
+                <h1 >
+                    manipulando imagens
+                </h1>
+            </div>
+            <div class="conteudo">
+                <article>
+                   ola aqui vamos aprender a colocar imagens em nossas "box" ajustar tamanho, posição e ate mesmo as colocar de fundo, mas lembre-se sempre use imagens de seu direito e que tenha tons para encaixar com o conteudo do seu site
+                </article>
+            </div>
+            <div class="div1">
+                <h2>adicionando imagem ao fundo</h2>
+                <article id="arprinc">
+                    para adionar uma imagem de fundo no seu site basta no estilo do seu "body" adicionar a tag:
+                    <br>
+                    <strong>background-image: url=(o caminho e o nome da imagem);</strong>
+                    <br>
+                    porem a imagem ira ficar repetida aparecendo varias imagens repetidas pela sua tela
+                    para que isso nao aconteça use a tag: 
+                    <br>
+                    <strong>
+                        background-repeat: no-repeat;
+                    </strong>
+                    <br>
+                    voce vera que a imagem nao esta repetindo mais, porem a imagem acaba quando o site atinge seu tamanho, temos duas soluçoes para isso, uma usando a tag 
+                    <br>
+                    <strong>
+                        background-position: 100% 100%;
+                    </strong>
+                    <br>
+                    porem voce vera que a imagem ira se esticando e contraindo conforme a janela for reduzindo ou aumentando de tamanho fazendo a imagem ficar totalmente distorcida o que não é muito bom dependendo da imagem mas temos também a tag: 
+                    <br>
+                    <strong>
+                        background-size:cover;
+                    </strong>
+                    <br>
+                    desse jeito a imagem nao sera distorcida porem se a janela for menor que a propia a imagem sera cortada priorzando o ponto de destaque dela. nesse caso a imagem ira rolar junto com a aba, para que ela fique fixa use a tag:
+                    <br>
+                    <strong>background-attachment: fixed;</strong>
+                    <br>
+
+                </article>
+            </div>
+            <div id="imagem">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="naosei300.png">
+                    <source media="(max-width: 700px)" srcset="naosei400.png">
+                    <img src="naosei700.png" alt="">
+                </picture>
+            </div>
+            <div class="div1" id="img">
+                <h2 id="im">
+                    adicinando imagem nas divs
+                </h2>
+                <article id="im">
+                    <p id="im">
+                        aqui vamos aprender  a colocar imagens no fundo de nossas <strong>divs</strong>
+                        para isso basta nas configurações de stilos da div adicionar a tag 
+                        <br>
+                        <strong> background-image: url(aqui digite o caminho e nome da imagem)</strong>
+                        <br>
+                        simples assim use a tag:
+                        <br>
+                        <strong>background-size:cover;</strong>
+                        <br>
+                        para a imagem ficar inteira em sua div e use a tag:
+                        <br>
+                        <strong>background-attachment:fixed;</strong>
+                        <br>
+                        para que a imagem fique fixa enquanto a aba é movimentada
+                    
+                    </p>
+                </article>
+            </div>
+        </section>    
+    </main>
+    <main>
+        <div class="principal" id="principal">
+            <h1>
+                adicionando iframe
+            </h1>
+        </div>
+        <div class="i-print">
+            <article>
+                <h2>o que é um iframe ?</h2>
+                aqui vamos apreder a usar o <strong>iframe</strong>, o iframe pode ser usado para ter em seu conteudo um site que você tenha ou um site de terceiros dentro de uma aba em sua pagina, é bastante simples e facil usar um iframe e no dia a dia do desenvolvedor uma tag importante e simples, clique nos links a baixo e entenda mais sobre o iframe...
+            </article>
+            <div class="principal">
+                <h1>
+                    como usar iframe ?
+                </h1>
+                
+            </div>
+            <article>
+                    para usar um iframe é facil basta usar a tag:
+                    <br>
+                    <strong>
+                        &lt;iframe src"digite o nome do site"&gt;
+                        <br>
+                    </strong>
+                    pronto simples assim, mas lembre-se voce ainda pode fazer ajuste de tamanho e estilo dentro da sua <strong>css</strong>
+            </article>
+            <div class="principal">
+                <h1>
+                    como ativar por link ?
+                </h1>
+            </div>
+            <article>
+                é facil basta usar a tag <strong>
+                    a
+                </strong> e adicionar o link do site desejado a ela mas dentro do tag <strong>&lt;iframe&gt;</strong>
+                voce ira adicionar o comando <strong>
+                    name="qualquer nome"
+                </strong>
+                pronto quando voce usar a tag <strong>a</strong>
+                voce ira adicionar dentro dela o comando <strong>target="o nome de sua iframe"</strong>
+                ficando assim:
+                <br>
+                <strong>&lt;iframe src="" name="qualquer nome"&gt;</strong>
+                <br>
+                <strong>&lt;a href="link do site" target="o nome do iframe"&gt;</strong>
+                <br>
+                viu como é facil e simples ?
+            </article>
+        </div>
+        <nav id="iframes">
+            <iframe src="iframe-pag3.html" frameborder="0" name="iframe1">
+            </iframe>
+            <br>
+            <a href="iframe-pag3.html" target="iframe1">o que é um iframe ?</a>
+            <a href="iframe2-pag3.html" target="iframe1">como usar ?</a>
+            <a href="iframe2-pag4.html" target="iframe1">ativar com link</a>
+        </nav>
+        <div class="idiv">
+            <iframe src="iframe-pag3.html" frameborder="0" name="iframe2">
+            </iframe>
+            <br>
+            <p>
+                <strong>obs.(use os links a baixo para navegar no iframe)</strong>
+            </p>
+            <a class="cima" href="iframe-pag3.html" target="iframe2">o que é um iframe ?</a>
+            <a href="iframe2-pag3.html" target="iframe2">como usar ?</a>
+            <a class="baixo" href="iframe2-pag4.html" target="iframe2">ativar com link</a>
+        </div>
+    </main>
+    <main>
+        <section>
+            <div class="principal" id="principal">
+                <h1>
+                    adicionando formularios
+                </h1>
+            </div>
+            <div class="div1">
+                <h2>
+                    o que é um formulario ?
+                </h2>
+                <article id="arprinc">
+                    ola chegamos aqui e agora vamos usar tags q possibilitam nossos usuarios de interagir com nosso site, de uma maneira bem simples também, por mais que HTML e CSS tenham bastantes tags muitas dela inclusive as principais sao faceis de serem usadas, a nossa tag <strong>&lt;form&gt;</strong> também nao sera dificil. veja um exemplo a baixo e nao se preocupe. pois seus dados nao serão enviados para nenhum local... 
+                </article>
+                <form action="naosei.php">
+                    <div class="form">
+                        <div class="pform">
+                            <p>
+                                <label for="inome">digite seu nome</label>
+                            </p>
+                        
+                            <p>
+                                <label for="isobre">seu sobrenome</label>
+                            </p>
+                            <p>
+                                <label for="iemail">digite seu email</label>
+                            </p>
+                            <p>
+                                <label for="itel">telefone/celular</label>
+                            </p>
+                            <p>
+                                <label for="idata"> nascimento</label>
+                            </p>
+
+                        </div>
+                        <div class="input">
+                            <input type="text" name="nome" id="inome" size="14" required minlength="2" placeholder="nome do usuario">
+                            <input type="text" name="sobre" id="isobre" size="14" required minlength="5" placeholder="digite seu sobrenome">
+                            <input type="email" name="email" id="iemail" size="14" required placeholder="ex:seu-email@gmail.com">
+                            <input type="tel" name="tel" id="itel" size="14" required minlength="11" placeholder="ex:(99)99999-9999">
+                            <input type="date" name="data" id="idata" required>
+                        </div>
+                        <div class="botao">
+                            <input id="botao1" type="reset" value="limpar">
+                            <input type="submit" value="pronto">
+
+                        </div>
+                    </div>
+                </form>
+                <article id="arprinc">
+                    isso que é um formulario, um campo aonde o usuario deixa seus dados ou exigencias agora vamos aprender como faz!!!
+                </article>
+            </div>
+            <div class="div1">
+                <h2>
+                    como fazer formulario ?
+                </h2>
+                <article>
+                    vamos começar usando a tag <strong>&lt;form&gt;  </strong> entre ela voce tera varias opções de tags <strong>input</strong> para usar, logo a baixo te mostrarei os pincipais input e para que eles servem.
+                    <br>
+                    <br>
+                    <strong>
+                        &lt;input type="text" name="de um nome" id="de um nome"&gt;
+                    </strong>
+                    <br>
+                    essa tag é para o usuario digitar qualquer texto
+                        <br>
+                        <br>
+                        <strong>
+                            &lt;input type="email" name="de um nome" id="de um nome"&gt
+                        </strong>
+                        <br>
+                        essa tag é para o usuario digitar o email
+                        <br>
+                        <br>
+                        <strong>
+                            &lt;input type="tel" name="de um nome" id="de um nome"&gt;
+                        </strong>
+                        <br>
+                        essa tag é para o usuario digitar o numero de telefone
+                        <br>
+                        <br>
+                        <strong>
+                            &lt;input type="date" name="de um nome" id="de um nome"&gt
+                        </strong>
+                        <br>
+                        essa tag é para o usuario escolher uma data
+                        <br>
+                        <br>
+                        <strong>&lt;input type="reset" value="escreva dentro do botão"&gt;</strong>
+                        <br>
+                        essa tag é para criar um botão para se o usuario desejar limpar o que ele escreveu
+                        <br>
+                        <br>
+                        <strong>&lt;input type="submit" value="escreva dentro do botão"&gt;</strong>
+                        <br>
+                        essa tag é para o usuario confirmar e enviar o formulario
+                    </strong>
+                </article>
+            </div>
+            <div id="prox"><a id="prox" href="pag4.html">proxima pag -&gt;</a></div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <strong>acesse meu repositorio do git hub</strong>
+            <br>
+            <a href="https://github.com/tavson1509/html-css3" id="igit">https://github.com/tavson1509/html-css3</a>
+        </p>
+    </footer>
+</body>
+</html>

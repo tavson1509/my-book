@@ -1,0 +1,21 @@
+nav {
+    display: none;
+}
+a {
+    display: none;
+}
+iframe {
+    display: none;
+}
+footer {
+    display: none;
+}
+legend {
+    color: yellow;
+}
+div.i-print {
+    display: block;
+}
+menu {
+    display: none;
+}

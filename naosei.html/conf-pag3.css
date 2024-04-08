@@ -1,0 +1,414 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-size: cover;
+    background-color: black;
+    background-image: url(vaidade-e-cinza-arte-na-roda-conexao-planeta.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 98vh;
+    background-attachment: fixed;
+}
+header>h1 {
+    text-align: center;
+ 
+}
+header {
+    background-image: linear-gradient(to top,rgb(0, 0, 0),gray,white, black);
+    padding: 5px;
+    margin: -7px;
+    box-shadow: 1px 2px 5px 1px black;
+
+}
+nav>a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 30px;
+}
+nav>a:hover {
+    color: black;
+}
+nav>a:active {
+    color: blue;
+}
+nav {
+    background-color: gray;
+    padding: 3px;
+    border: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.653);
+}
+menu {
+    background-color: gray;
+    padding: 3px;
+    border: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.653);
+    text-align: center;
+}
+menu:hover {
+    cursor: pointer;
+    color: gray;
+}
+menu>span {
+    background-color: rgba(43, 43, 43, 0.381);
+}
+header>h1 {
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+main {
+    border-radius: 10px 20px 10px 20px;
+    background-color: azure;
+    padding: 10px;
+    box-shadow: 0px 2px 10px 1px black;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    
+
+}
+div.principal {
+    font-size: 20px;
+    background-image: linear-gradient(to right, rgb(35, 34, 34), azure);
+    text-align: center;
+    padding: 1px;
+    margin: -10px;
+    border: 0px;
+}
+div.principal>p {
+    padding: 0px;
+    margin: -9px;
+    position: relative;
+    top: -15px;
+}
+div.radio>label {
+    margin-right: 20px;
+}
+div.check>input {
+    margin-top: 10px;
+}
+
+section {
+    background-color: azure;
+    padding: 0px;
+    margin: 0px;
+    border: 4px;
+}
+section>article {
+    padding: 1px;
+    margin: 20px;
+}
+div.conteudo {
+    padding-top: 20px;
+    margin-top: 0px;
+    border: 0px;
+    display: block;
+}
+h2 {
+    font-size: 20px;
+    background-image: linear-gradient(darkgray,rgba(0, 0, 0, 0.753));
+    border-radius: 20px 20px 1px 1px;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    width: 300px;
+    margin: auto;
+}
+div.div1 {
+    padding: 10px;
+    margin: 0px;
+    padding-top: 20px;
+}
+article#arprinc{
+    padding: 5px;
+    margin: 0px;
+    margin: auto;
+
+}
+div#imagem {
+    display: block;
+    background-color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+picture>img {
+    display: block;
+    position: relative;
+    margin: auto;
+    max-width: 700px;
+}
+nav#iframes {
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 400px;
+    height: 200px;
+    box-shadow: 0px 0px 10px 1px black;
+    margin: auto;
+    position: relative;
+}
+nav#iframes>iframe {
+    border: 1px solid black;
+    height: 200px;
+}
+nav#iframes>a {
+    background-image: linear-gradient(to left,rgb(255, 255, 255), gray);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+    text-align: center;
+    display: block;
+    width: 70px;
+    margin-bottom: 22px;
+    position: relative;
+    left: 78%;
+    top: -180px;
+    color: black;
+}
+nav#iframes>a:hover {
+    border: 0.5px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px 2px black;
+    font-size: 10.5px;
+}
+div.idiv {
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 400px;
+    box-shadow: 0px 0px 10px 1px black;
+    margin: auto;
+    position: relative;
+    background-image: linear-gradient(to top, black, white,rgb(97, 97, 97));
+}
+div.idiv>iframe {
+    border: 1px solid black;
+    margin: auto;
+    display: block;
+    height: 200px;
+    margin-bottom: 0px;
+} 
+div.idiv>a {
+    background-color: rgb(123, 123, 123);
+    margin-left: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 0px;
+}
+div.idiv>p {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: rgba(255, 255, 255, 0.587);
+    padding: 10px;
+}
+a.cima {
+    border-radius: 20px 20px 0px 0px;
+}
+a.baixo {
+    border-radius: 0px 0px 20px 20px;
+}
+div.idiv>a:hover {
+    border: 0.5px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px 2px black;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.381);
+    background-color: rgb(105, 105, 105);
+}
+form {
+    border: 1px solid #000000;
+    height: 250px;
+    margin: auto;
+    background-color: rgba(255, 232, 104, 0.377);
+    min-width: 308px;
+    min-height: 250px;
+    max-width: 609px;
+
+}
+form.pag4 {
+    height: 1340px;
+}
+div.pag4 {
+    width: 129px;
+    position: relative;
+    left: 65%;
+    display: inline;
+}
+div.volt {
+    display: inline;
+    position: relative;
+    left: -130px;
+}
+fieldset#select>p {
+    
+
+}
+div#section {
+    margin-left: 40px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+div#geral {
+    background-color: rgba(255, 232, 104, 0.498);
+}
+div.color {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.form {
+    width: 260px;
+    height: 241px;
+    margin: auto;
+}
+div.pform {
+    display: block;
+    width: 300px;
+    height: 30px;
+
+}
+div.pform>p {
+    
+    display: block;
+}
+div.input {
+
+}
+div.input>input {
+    display: block;
+    position: relative;
+    left: 130px;
+    top: -30px;
+    margin-bottom: 12px;
+}
+
+div.botao>input {
+    border: 1px solid black;
+    padding: 5px 20px;
+    background-color: white;
+    
+}
+div.botao>input:hover {
+    background-color: gainsboro;
+    color: white;
+}
+div.botao>input:active {
+    color: blue;
+}
+div.botao>input#botao1 {
+    margin-right: 95px;
+}
+a#prox {
+    margin: auto;
+    font-size: 15px;
+
+}
+div#prox {
+    width: 101px;
+    position: relative;
+    left: 75%;
+}
+footer {
+    background-image: linear-gradient(lightgray, black);
+    padding: 1px;
+    margin: -8px;
+    border-radius: 1px 1px 1px 1px;
+    border: 1px;
+    display: block;
+    height: 100px;
+    width: auto;
+    
+}
+footer>p {
+    color: black;
+
+    text-align: center;
+}
+article {
+    background-color: beige;
+    padding: 5px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.66);
+}
+article#im {
+    background-image: url(fundo-cinza.avif);
+    color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+}
+p#im {
+    color: white;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.352);
+    box-shadow: 0px 0px 5px 1px black;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+}
+h2#im {
+}
+div#principal {
+    padding: -1px;
+    margin: -10px;
+    border: 0px;
+    padding-bottom: 0px;
+}
+div#principal>h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+picture {
+    padding: 0px;
+    margin: 17px;
+    
+}
+source {
+    padding: 1px;
+    margin: 1px;
+}
+source.sou1 {
+}
+div.i-print>article {
+    padding-top: 20px;
+}
+li {
+    background-color: #000000;
+    margin-top: 10px;
+    display: none;
+}
+ul {
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+}
+ul:hover {
+    background-color: darkgray;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+ul>a {
+    text-decoration: none;
+    color: #000000;/
+}
+
+

@@ -1,0 +1,159 @@
+body {
+    background-size: cover;
+    background-color: black;
+    background-image: url(vaidade-e-cinza-arte-na-roda-conexao-planeta.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 98vh;
+    background-attachment: fixed;
+}
+header>h1 {
+    text-align: center;
+ 
+}
+header {
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 1px 2px 5px 1px black;
+}
+nav>a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 30px;
+}
+nav>a:hover {
+    color: black;
+}
+nav>a:active {
+    color: blue;
+}
+nav {
+    background-color: gray;
+    padding: 3px;
+    border: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.653);
+}
+header>h1 {
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+main {
+    border-radius: 10px 20px 10px 20px;
+    background-color: azure;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 2px 10px 1px black;
+    
+}
+div.principal {
+    background-image: linear-gradient(to right, rgb(35, 34, 34), azure);
+    text-align: center;
+    padding: 0px;
+    margin: -9px;
+    margin-left: -10px;
+    border: 0px;
+    height: 30px
+}
+div.principal>h1 {
+    font-size: 20px;
+    text-align: center ;
+}
+
+section {
+    background-color: azure;
+    padding: 0px;
+    margin: 0px;
+    border: 4px;
+}
+section>article {
+    padding: 1px;
+    margin: 20px;
+}
+div.conteudo {
+    padding: 0px;
+    margin: 20px;
+    border: 0px;
+    display: inline-block;
+}
+    h2 {
+    font-size: 20px;
+    background-image: linear-gradient( rgb(255, 255, 255) ,rgba(0, 0, 0, 0.521));
+    border-radius: 20px 20px 1px 1px;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    width: 300px;
+}
+div.div1 {
+    padding: 1px;
+    margin: 20px;
+}
+article#arprinc{
+    padding: 5px;
+    margin: 0px;
+}
+div#imagem>img {
+    margin: auto;
+}
+div>picture {
+
+}
+footer {
+    background-image: linear-gradient(lightgray, black);
+    padding: 1px;
+    margin: -8px;
+    border-radius: 1px 1px 1px 1px;
+    border: 1px;
+    display: block;
+    height: 100px;
+    width: auto;
+    
+}
+footer>p {
+    color: black;
+
+    text-align: center;
+}
+article {
+    background-color: beige;
+    padding: 5px;
+    margin: 18px;
+
+}
+article#im {
+    background-image: url(fundo-cinza.avif);
+    color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-width: 300px;
+    max-width: 700px;
+    margin-bottom: 2px;
+    padding-bottom: 20px;
+}
+p#im {
+    color: white;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+h2#im {
+}
+div#principal {
+    padding: 0px;
+    margin: -10px;
+    border: 0px;
+    margin-top:20px;
+}
+picture {
+    padding: 0px;
+    margin: 17px;
+    
+}
+source {
+    padding: 1px;
+    margin: 1px;
+}
+source.sou1 {
+}

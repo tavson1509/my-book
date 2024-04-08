@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag 2</title>
+    <link rel="stylesheet" href="cores.css">
+    <style>
+        h1#estp {
+            text-align: center;
+        }
+        div#div1 { display: inline-block;
+            background-color: chartreuse;
+            text-align: center;
+            height: 100px; width: 100px;
+            border: solid;
+        }
+        div#div2 { display: inline-block;
+            background-color: chartreuse;
+            text-align: center;
+            height: 100px; width: 100px;
+            border: solid;
+        }
+        div#div3 { display: inline-block;
+            background-color: chartreuse;
+            text-align: center;
+            height: 100px; width: 100px;
+            border: solid;
+        }
+        div#div1:hover { background-color: gold;}
+        div#div2:hover {
+            background-color: rgb(236, 244, 7);
+        }
+        div#div3:hover { 
+            background-color: gold;
+        }
+        a#voltar:hover {
+            color: black;
+        }
+        a#voltar:active {
+            color: mediumblue;
+        }
+        div#passe>p {
+            display: none;
+        }
+        div#passe:hover>p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="estp">estilos nas paginas</h1>
+    <h2>olá</h2>
+    <h3>adicionando estilos nas tags</h3>
+    <p>
+        na pagina anterior vimos que é possivel adicionar cores aos paragrafos, aos titulos e até mesmo na pagina em si, e se eu te falar que não é nescessário adicionar-los um por um ?
+        <br>
+        se eu te disse que você poderia por exemplo... fazer com que todos os itulos
+        <strong> &lt;h1&gt;</strong> fossem de uma cor especifica ?
+        <br>
+        e sim isso é possivel vamos supor que voce precise q todos texto de todos seus titulos <strong>&lt;h1&gt;</strong> de sua pagina sejam de uma cor expecifica é simples basta adicionar na part <strong>"head"</strong> de seu site a tag <strong>&lt;style&gt;</strong> entre a tag style adicione: <br>
+        <strong> h1{</strong>
+        aqui voce vai digitar: <strong>color:escolha uma cor;}</strong> 
+        <br>
+        pronto, mas voce pode também adicionar varias outras coisas como o comando 
+        <strong>
+            background-color:escolha uma cor;
+        </strong>
+        assim como qualquer outra coisa sobre estilos em CSS 
+        <br>
+    </p>
+        <picture>
+            <source media="(max-width: 800px)" srcset="captura400.jpg">
+            <source media="(max-width: 1200px)" srcset="captura800.jpg">
+            <img src="captura1200.jpg" alt="">
+        </picture>
+    <h3>
+        adiocionando ID nas tags
+    </h3>
+    <p>
+        voce aprendeu a adionar estilos em todas as tags de um determinado valor, mas vomos supor que voce tenha 8 itulos h2 no seu site e voce precise deixar quatro em um estilos dois em outro e mais dois em outro como que faria ? 
+        <br>
+        temos a solução para você, podemos usar a tag <br>
+        <strong>
+            &lt;h2 id="qualquer nome"&gt;
+        </strong> 
+        <br>
+        pronto sua tag de titulo agora tem um indentificador e sempre que voce quiser modificar todos os titulos com esse  identificador basta voce fazer as mesmas coisas do nosso tutorial a cima de adionar
+        <br>
+        <strong>
+            h2#nome-definido {digite aqui os os comandos que deseja usar}
+        </strong>
+    </p>
+        <h3>adicionando CLASS</h3>
+    <p>      
+        aprendendo adicionar o id, mas o id é limitado apenas para uma unica vez
+        mas e se precisar-mos adicionar varias "classes" do mesmo jeito ? <br>
+        basta usar a CLASS é praticamente a mesma coisa do ID mas a CLASS voce pode adicionar quantas vezes voce quiser 
+        basta voce usar a esma tag a cima usada, exemplo 
+        <br>
+        &lt;h2 class="qualque nome"&gt;
+        e para voce usar é do mesmo jeito que usou no exemplo a cima... <br>
+        <h2>adicionando div</h2>
+    </p>
+    <p>
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+    </p>
+    <p>
+        para adicionar uma div como na imagem a cima voce precisara adicionar a div no seu "body" e escrever qualquer coisa nela  e na pare de "head" voce escrever dentro de uma tag "style" o que voce deseja com ela exemplo
+
+        na parte de "head" adiocione na tag "style" a tag "div {aqui de os comandos desejados}"
+        veja esse print 
+    </p>    
+    <img src="capturadiv400.jpg" alt="">
+    <p>
+        mas se voce notar ao passar o mouse em cima do div dessa pagina ele ira mudar de cor, e como faz isso ? <br>
+        simples dentro da sua tag "style" voce ira atribuir div.hover { o comando que voce desejar} veja no print a baixo 
+    </p>
+    
+    <img src="capturadiv2400.jpg" alt="">
+    <br>
+    <h2> escondendo textos</h2>
+    <p>
+        se voce deseja ocultar um texto até que o usuario passe a mouse por cima
+        tipo um menu de opções voce pode é simples, voce ira adicionar um titulo e nesse titulo um paragrafo na area de style do seu codigo CSS voce ira usar o comando <strong>h1&gt;p {tags desejadas}</strong> 
+        <br>
+        o comando <strong>h1&gt;p</strong> serve para voce dizer que voce deseja fazer com  os <strong>&lt;p&gt;</strong> dentro de <strong>&lt;h1&gt;</strong>...
+        <br> 
+        mas o que é preciso fazer para esconder os &lt;p&gt; dentro do meu titulo e só aparecer quando eu passar o mouse por cima ? 
+        <br>
+        muito simples primeiro vamos esconder basta usar a tag 
+        <br>
+        <strong>display: blok;</strong> 
+        <br>
+        e para somente aparecer ao passar o mouse por cima dentro da area de <strong>&lt;style&gt;</strong> basta adicionar
+        <br> 
+        <strong>h1:hover&gt;p {display: blok;}</strong> 
+        <br>
+        veja um exemplo no print a baixo
+    </p>
+    <div id="passe">
+        <h3>passe o mouse aqui</h3>
+        <p>
+            aqu esta um exemplo funcional veja o codigo a baixo
+        </p>
+        <p>
+            <img src="printpasse.jpg" alt="">
+        </p>
+
+    </div>
+    <a id="voltar" href="aprendendocss.html">&lt;voltar</a>
+</body>
+</html>

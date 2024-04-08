@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'android';
+    src: url(IDroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: rgb(245, 239, 190);
+}
+header {
+    margin: -20px;
+  padding: 20px;
+    background-image: linear-gradient(to bottom,#2FA060,#05401A );
+}
+header>h1 {
+    text-align: center;
+    color: azure;
+}
+header>h2 {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    color: rgba(250, 235, 215, 0.858);
+}
+nav {
+    padding: 6px;
+    border: 0px;
+    margin: -21px;
+
+}
+nav>a {
+    color: rgb(96, 195, 125);
+    margin-left: 10px;
+}
+a#css1 {
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+    border: 0px;
+    font-size: 13px;
+}
+a#css1:hover {
+    background-color: darkgreen;
+    color: black;
+}
+a#css2 {
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+    border: 0px;
+    font-size: 13px;
+}
+a#css2:hover {
+    background-color: darkgreen;
+    color: black;
+}
+a#css3 {
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+    border: 0px;
+    font-size: 13px;
+}
+a#css3:hover {
+    background-color: darkgreen;
+    color: black;
+}
+a#css1:active {
+    color: blue;
+}
+a#css2:active {
+    color: blue;
+}
+a#css3:active {
+    color: blue;
+}
+article>strong {
+    color: darkgreen;
+}
+main {
+    background-color: azure;
+    padding: 0px;
+    border: 0px;
+    margin: 21px;
+    box-shadow: 0px 3px 15px -4px black;
+}
+section>h2 {
+    font-family: 'android';
+    font-size: 20px;
+    padding: 0px;
+    margin: 10px;
+    color: rgba(1, 67, 1, 0.922);
+}
+section>h3 {
+    font-family: 'android';
+    font-size: 15px;
+    background-image: linear-gradient(to right, rgba(5, 255, 5, 0.664), rgba(185, 255, 185, 0.509));
+    color: darkgreen;
+}
+mark {
+    background-color: rgba(96, 195, 126, 0.664);
+    color: darkgreen;
+}
+div {
+    border: 0px;
+    margin: 0px;
+    padding: 11px;
+    border-color: #05401A;
+
+}
+footer {
+    background-color: #2FA060;
+    border-radius: 10px 10px 1px 1px;
+    padding: 0px;
+    margin: 10px;
+    border: 0px;
+}
+footer>h1 {
+    background-color: #05401A;
+    color: azure;
+    font-size: 20px;
+    border-radius: 10px 10px 1px 1px;
+}
+p.lista>a {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    margin-left: 20px;
+}
+footer>div {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
