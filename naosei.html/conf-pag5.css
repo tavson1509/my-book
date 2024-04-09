@@ -1,5 +1,17 @@
-body{
-    
+@font-face {
+    font-family: 'header';
+    src: url(Info\ Story.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'book';
+    src: url(Book.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
 
 }
 header {
@@ -10,7 +22,8 @@ header {
 
 }
 header>div {
-    background-color: rgb(188, 94, 27);
+    background-image: linear-gradient(to bottom, rgb(243, 123, 37), rgba(0, 0, 0, 0.575)
+    );
     border-bottom: 1px solid black;
 }
 header>div>a {
@@ -19,6 +32,7 @@ header>div>a {
 header>div>a>h1 {
     padding-top: 20px;
     color: black; text-align: center;
+    font-family: 'header';
 }
 header>div>a>p {
     font-size: 20px;
@@ -31,6 +45,8 @@ header>div>a>p {
     width: 130px;
     margin: auto;
     text-align: center;
+    background-color: chocolate;
+    box-shadow: 0px 0px 3px 0px black;
 }
 .material-symbols-outlined {
     font-variation-settings:
@@ -50,6 +66,7 @@ menu {
     position: relative;
     top: -14px;
     color: rgb(000,000,000);
+    box-shadow: 0px 0px 3px 0px black;
 }
 menu:hover {
     cursor: pointer;
@@ -75,11 +92,11 @@ main>nav>a {
 main { 
     background-image: linear-gradient(to top,rgba(255, 255, 0, 0.655),rgba(210, 105, 30, 0.82),rgba(255, 255, 0, 0.543), chocolate); 
     background-repeat: simples, lembre que toda estrutura de no-repeat;
-    width: 97vw;
+    width: 103.8%;
     background-attachment: fixed;
-    margin-left: -10px;
-    margin-right: -50px;
-    margin-bottom: -10px;
+    margin-left: -10.9px;
+    margin-right: 100vw;
+    margin-bottom: -50px;
     margin-top: -16px;
     padding: px;
 }
@@ -87,6 +104,7 @@ div.principal {
     padding-top: 50px;
     margin: auto;
     width: 350px;
+    padding-bottom: 50px;
 }
 div.principal:hover {
 }
@@ -97,6 +115,8 @@ div.css {
     width: 350px;
     display: block;
     border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px 0px black;
+    height: 330px;
 }
 
 div.css>a {
@@ -132,6 +152,7 @@ div.js {
     position: relative;
     margin-top: 40px;
     border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px 0px black;
 }
 div.js>a>img {
     width: 350px;
